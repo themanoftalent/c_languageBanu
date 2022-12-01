@@ -9,6 +9,11 @@ int main()
     for(i = 0; i < number; i++) {
         scanf("%d", arrays + i);
     }
+    for(i=number-1; i>=0; i--)
+    {
+    	printf("%d|",arrays[i]);
+	}
+	printf("\n");
 
 
     /* Write the logic to reverse the array. */
