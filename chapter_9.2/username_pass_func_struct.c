@@ -25,6 +25,20 @@ void login(struct login log) {
 }
 
 int main() {
+    char username1[20]; // 20 is the maximum length of the username and password that can be entered
+    char password1[20];     // 20 is the maximum length of the username and password that can be entered
+    
+    struct login log;
+    
+    printf("Enter your username: ");
+    scanf("%s",&log.username);
+    printf("Enter your password: ");
+    scanf("%s",&log.password);
+    
+    login(log);
+    
+    
+    return 0;
 // your code will be here
   
   
