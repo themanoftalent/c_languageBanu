@@ -1,4 +1,3 @@
-
 #include "stdio.h"
 #include "stdlib.h"
 #include "string.h"
@@ -10,8 +9,8 @@ struct login {
 };
 
 void login(struct login log) {
-    char username1[20]; // 20 is the maximum length of the username and password that can be entered
-    char password1[20];     // 20 is the maximum length of the username and password that can be entered
+    char username1[20]; 
+    char password1[20];   
     printf("Enter your username: ");
     scanf("%s", username1);
     printf("Enter your password: ");
@@ -25,8 +24,21 @@ void login(struct login log) {
 }
 
 int main() {
-// your code will be here
-  
-  
+    char username1[20]; 
+    char password1[20]; 
+   
 
+    struct login log;
+    printf("Enter your username:");
+    scanf("%s",&log.username);
+    printf("Enter password:");
+    scanf("%s",&log.password);
+    login(log);
+   
+    
+    
+    return 0;
 }
+
+
+
