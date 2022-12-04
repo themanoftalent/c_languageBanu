@@ -1,13 +1,26 @@
-//create a username and password and check it with function
-
 #include "stdio.h"
 #include "stdlib.h"
 #include "string.h"
-#include "ctype.h" // for isdigit()
 
 void login(char username[], char password[]) {
-//   your code here  
-//   code burada
+ if (strcmp(username, "BARTU") == 0) {
+        if (strcmp(password, "ak1f123") == 0) {
+ 
+ 
+            printf("\nWelcome.Login Success!");
+ 
+ 
+        }
+        else {
+            printf("\nwrong password");
+        }
+    }
+    else {
+        printf("\nUser doesn't exist");
+        system("exit");
+         
+    }
+
   
 }
 
