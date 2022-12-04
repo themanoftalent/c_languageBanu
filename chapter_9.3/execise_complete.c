@@ -1,24 +1,27 @@
-#include "stdio.h"
-#include "stdlib.h"
-#include "math.h"
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int number, *arrays, i;
+    printf("Enter number:");
+    scanf("%d", &number);
+    arrays = (int*) malloc(number * sizeof(int));
+    for(i = 0; i < number; i++) {
+        scanf("%d", arrays + i);
+    }
 
-int main(){
-	
-	double x;
-	int n;
-	double r;
-	
-	printf("please enter x:");
-	scanf("%lf",&x);
-	printf("please enter n:");
-	scanf("%d",&n);
-	
-	r=pow(x,n);
-	
-	printf("result:%lf\n",r);
-	
-	return 0;		
-	
+
+    /* Write the logic to reverse the array. */
+    //    burada array tersi alınacak ve yazdırılacak
+
+    for(i = number-1; i>=0; i--)
+    {
+        printf("%d|", arrays[i]);
+
+    }
+    printf("\n");
+    for(i = 0; i < number; i++)
+        printf("%d ", *(arrays + i));
+        printf("%d|", *(arrays + i));
+    return 0;
 }
-
-//     your code here
