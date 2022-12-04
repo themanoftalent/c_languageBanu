@@ -1,13 +1,19 @@
-#include "stdio.h"
-#include "stdlib.h"
+#include <stdio.h>
+#include"math.h"
 
+int main(void)
+{
+    double floor;
+    int power;
 
-class Solution{
-//     your code here
-        public:
-        double myPow(double x, int n) {
+    printf("Enter a number:");
+    scanf("%lf",&floor);
+        
+    printf("Enter a power:");
+    scanf("%d",&power);
 
-        }
-};
+    float result=pow(floor,power);
+    printf("result:%.5f\n",result);
 
-//     your code here
+    return 0;
+}
