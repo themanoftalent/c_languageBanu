@@ -3,18 +3,21 @@
 
 int main()
 {
-    int number, *arrays, i;
-    scanf("%d", &number);
-    arrays = (int*) malloc(number * sizeof(int));
-    for(i = 0; i < number; i++) {
-        scanf("%d", arrays + i);
+    int num, *arr, i;
+    scanf("%d", &num);
+    arr = (int*)malloc(num * sizeof(int));
+    for(i = 0; i < num; i++) {
+        scanf("%d", arr + i);
     }
 
-
-    /* Write the logic to reverse the array. */
-    //    burada array tersi alınacak ve yazdırılacak
-
-    for(i = 0; i < number; i++)
-        printf("%d ", *(arrays + i));
+    for (int u = 0, o = num - 1; u < (num / 2); u++, o--)
+    {
+        int temp = arr[u];
+        arr[u] = arr[o];
+        arr[o] = temp;
+    }
+    
+    for(i = 0; i < num; i++)
+        printf("%d ", *(arr + i));
     return 0;
 }
