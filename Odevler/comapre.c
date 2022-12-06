@@ -1,28 +1,26 @@
 // compare name surname 
 
-
-#include "stdio.h"
-#include "string.h"
-
-#define name "Akif"
-#define age 32
-#define favnum 3.14
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main() {
-    printf("Enter your name :");
-    scanf("%s", name);
-    printf("Enter your age :");
-    scanf("%d", age);
-    printf("Enter your favnum :");
-    scanf("%f", favnum);
-
-
-    if (strcmp(name, "Akif") == 0 && age == 32 && favnum == 3.14) {
-        printf("You are Akif, I know who you are man, my favorite teacher");
-    } else {
-        printf("You are not Akif, I don't know who you are as I am not that clever");
-
-        return 0;
-
-    }
+	char name[20];
+	char surname[20];
+	
+    printf("enter your name:");
+	scanf("%s",&name);
+	printf("enter your surname:");
+	scanf("%s",&surname);
+	
+	if((strcmp(name,"aysegul")==0)&&(strcmp(surname,"yavuz")==0)){
+		printf("name:%s surname:%s",name,surname);
+	}
+	else{
+		printf("wrong person");
+	}
+	
+	
+	
+	return 0;
+}
