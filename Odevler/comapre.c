@@ -1,35 +1,32 @@
-
-#include "stdio.h"
-#include "string.h"
-
-#define name "Akif"
-#define surname "cifci"
+#include<stdio.h>
+#define name akif
 
 
-int main() {
-    char myname[10];
-    char mysurname[10];
-    int favnumber;
-    printf("Enter your name:");
-    scanf("%s", myname);
-    printf("Enter your surname:");
-    scanf("%s", mysurname);
-    printf("Enter your favourite number:");
-    scanf("%d", &favnumber);
-    if (strcmp(myname, name) == 0) {
-        if (strcmp(mysurname, surname) == 0) {
-            if (favnumber == 7) {
-                printf("You are Akif cifci");
-            } else {
-                printf("You are not Akif cifci");
-            }
-        } else {
-            printf("You are not Akif cifci");
-        }
-    } else {
-        printf("You are not Akif cifci");
-    }
-    return 0;
-    
+int main()
+{
+
+char name[30];
+int age;
+
+printf("enter name:");
+scanf("%s",&name);
+
+printf("enter age:");
+scanf("%d",&age);
+
+if((strcmp(name,"akif")==0) &&(age==32))
+{
+	printf("this is true\n");
+}
+else
+{
+	printf("wrong");
+}
+
+return 0;	
+	
+	
+	
+	
 }
 
