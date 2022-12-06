@@ -1,9 +1,8 @@
-
 #include "stdio.h"
 #include "string.h"
 
-#define name "Akif"
-#define surname "cifci"
+#define name "Bartu"
+#define surname "Pacal"
 
 
 int main() {
@@ -18,16 +17,16 @@ int main() {
     scanf("%d", &favnumber);
     if (strcmp(myname, name) == 0) {
         if (strcmp(mysurname, surname) == 0) {
-            if (favnumber == 7) {
-                printf("You are Akif cifci");
+            if (favnumber == 13) {
+                printf("You are Bartu Pacal");
             } else {
-                printf("You are not Akif cifci");
+                printf("You are not Bartu Pacal");
             }
         } else {
-            printf("You are not Akif cifci");
+            printf("You are not Bartu Pacal");
         }
     } else {
-        printf("You are not Akif cifci");
+        printf("You are not Bartu Pacal");
     }
     return 0;
     
