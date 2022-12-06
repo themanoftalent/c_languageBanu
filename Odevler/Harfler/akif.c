@@ -4,7 +4,6 @@
 int main() {
 
 	int x,y,n,m;
-	char a='A',k='k',i='i',f='f';
 
 	printf("\nenter the amount of rows: ");
 	scanf("%d",&n);
@@ -15,19 +14,19 @@ int main() {
 			printf(" ");
 		}
 		for(y=1;y<=x;y++) {
-			printf("%c",a);
+			printf("%c",65);
 		}
 		printf(" ");
 		for(y=1;y<=x;y++) {
-			printf("%c",k);
+			printf("%c",107);
 		}
 		printf(" ");
 		for(y=1;y<=x;y++) {
-			printf("%c",i);
+			printf("%c",105);
 		}
 		printf(" ");
 		for(y=1;y<=x;y++) {
-			printf("%c",f);
+			printf("%c",102);
 		}
 		printf("\n");
 	}
