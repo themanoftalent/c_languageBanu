@@ -2,35 +2,36 @@
 #include "stdio.h"
 #include "string.h"
 
-#define name "Akif"
-#define surname "cifci"
+// hesap giriş yapma
+# define name "Mert"
+# define surname "Kaya"
+# define password "mertovski"
+#define age 20
 
-
-int main() {
-    char myname[10];
-    char mysurname[10];
-    int favnumber;
-    printf("Enter your name:");
-    scanf("%s", myname);
-    printf("Enter your surname:");
-    scanf("%s", mysurname);
-    printf("Enter your favourite number:");
-    scanf("%d", &favnumber);
-    if (strcmp(myname, name) == 0) {
-        if (strcmp(mysurname, surname) == 0) {
-            if (favnumber == 7) {
-                printf("You are Akif cifci");
-            } else {
-                printf("You are not Akif cifci");
-            }
-        } else {
-            printf("You are not Akif cifci");
-        }
-    } else {
-        printf("You are not Akif cifci");
-    }
-    return 0;
-    
-    
+int main(){
+	printf("Enter your names: ");
+	char names [20];
+	scanf("%s", names);
+	
+	printf("Enter your surname: ");
+	char surnames [20];
+	scanf("%s", surnames);
+	
+	printf("Enter your passwords: ");
+	char passwords [30];
+	scanf("%s", passwords);
+	
+	printf("Enter your ages: ");
+	int ages;
+	scanf("%d", &ages);
+	
+	if(strcmp(names,name)==0 && ages == age && strcmp(surnames,surname)==0 && strcmp(passwords,password)==0){
+		printf("login is succesfully");
+	}
+	else{
+		printf("wrong information");
+	}
+	return 0;
 }
+
 
