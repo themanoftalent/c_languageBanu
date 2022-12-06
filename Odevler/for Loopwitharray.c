@@ -1,25 +1,20 @@
 // For loop with 2D array myarray[2][2]
-
-// without for loop 
-
 #include "stdio.h"
-int main(){
-    int myarray[9][9] = {
-            {1, 2, 3, 4, 5, 6, 7, 8, 9},
-            {2, 4, 6, 8, 10, 12, 14, 16, 18},
-            {3, 6, 9, 12, 15, 18, 21, 24, 27},
-            {4, 8, 12, 16, 20, 24, 28, 32, 36},
-            {5, 10, 15, 20, 25, 30, 35, 40, 45},
-            {6, 12, 18, 24, 30, 36, 42, 48, 54},
-            {7, 14, 21, 28, 35, 42, 49, 56, 63},
-            {8, 16, 24, 32, 40, 48, 56, 64, 72},
-            {9, 18, 27, 36, 45, 54, 63, 72, 81}
-    };
-    
-    printf("myarray[0][0]=%d\n",myarray[0][0]);
-    printf("myarray[0][1]=%d\n",myarray[0][1]);
-    printf("myarray[1][0]=%d\n",myarray[1][0]);
-    printf("myarray[1][1]=%d\n",myarray[1][1]);
-    return 0;
-}
+#include "string.h"
 
+int main(){
+	int i,j;
+	int mArray[2][2]={
+		{1,2},{2,3}
+	};
+	for(i=0;i<2;i++){
+	
+		for(j=0;j<2;j++){
+			printf("%d",mArray[i][j]);
+		}
+		
+		printf("/n");
+}
+	
+	}
+	
