@@ -11,7 +11,6 @@ int main() {
 		printf("\nthere is nothing to print.\n");
 	}
 	else {
-
 		printf("\n");
 		for(x=1;x<=n;x++) {
 			for(y=1;y<=2*(n-x);y++) {
