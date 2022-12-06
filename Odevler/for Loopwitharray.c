@@ -14,26 +14,14 @@ int main(){
             {9, 18, 27, 36, 45, 54, 63, 72, 81}
     };
 
-    printf("myarray[0][0]=%d\n",myarray[0][0]);
-    printf("myarray[0][1]=%d\n",myarray[0][1]);
-    printf("myarray[1][0]=%d\n",myarray[1][0]);
-    printf("myarray[1][1]=%d\n",myarray[1][1]);
-    printf("myarray[2][2]=%d\n",myarray[2][2]);
-    printf("myarray[2][3]=%d\n",myarray[2][3]);
-    printf("myarray[3][2]=%d\n",myarray[3][2]);
-    printf("myarray[3][3]=%d\n",myarray[3][3]);
-    printf("myarray[4][4]=%d\n",myarray[4][4]);
-    printf("myarray[4][5]=%d\n",myarray[4][5]);
-    printf("myarray[5][4]=%d\n",myarray[5][4]);
-    printf("myarray[5][5]=%d\n",myarray[5][5]);
-    printf("myarray[6][6]=%d\n",myarray[6][6]);
-    printf("myarray[6][7]=%d\n",myarray[6][7]);
-    printf("myarray[7][6]=%d\n",myarray[7][6]);
-    printf("myarray[7][7]=%d\n",myarray[7][7]);
-    printf("myarray[8][8]=%d\n",myarray[8][8]);
-    printf("myarray[8][7]=%d\n",myarray[8][7]);
-    printf("myarray[7][8]=%d\n",myarray[7][8]);
-    printf("myarray[7][7]=%d\n",myarray[7][7]);
+   	int i,j;
+	for(i=0;i<9;i++){
+		for(j=0;j<9;j++){
+			printf("%d",myarray[i][j]);
+
+		}
+		printf("\n");
+	}
     return 0;
 }
     
