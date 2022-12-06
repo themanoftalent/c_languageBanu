@@ -1,11 +1,17 @@
 #include <stdio.h>
-int main()
-{
-    int a = 9,b = 4, c;
-    
-    c=a%b;
+int main() {
   
-    printf("Remainder when a divided by b = %d \n",c);
-    
-    return 0;
+  const int x = 101, y = 151;
+  const float z = 150.6;
+  float kume[3];
+  
+  kume[0]=x;
+  kume[1]=y;
+  kume[2]=z;
+
+  for(int i=0;i<3;i++){
+    printf("%.1f\n",kume[i]);
+  }
+
+return 0;
 }
