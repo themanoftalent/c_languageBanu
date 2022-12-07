@@ -16,7 +16,8 @@ int main() {
             total += numbers[j][i]; // total = total + numbers[j][i];
             totalSubjects++;
         }
-//     your code here
+    float average = (float)total / (float)totalSubjects;
+    printf("Average: %.2f \n", average);
     }
     return 0;
 }
