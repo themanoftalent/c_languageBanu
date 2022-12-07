@@ -1,7 +1,7 @@
 #include "stdio.h"
 
 // Prototype:
-void calculator()
+void calculator();
 
 
 int main() {
