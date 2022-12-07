@@ -1,3 +1,4 @@
 
 
-// silinecek
+// Akif was here 😇
+//Gosh!
