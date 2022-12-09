@@ -6,9 +6,13 @@
 #include "ctype.h" // for isdigit()
 
 void login(char username[], char password[]) {
-//   your code here  
-//   code burada
-  
+
+	if(strcmp(username,"guller")== 0 && strcmp(password,"kalyoncu")==0){
+		printf("Username and password are correct");
+	}
+	else{
+		printf("Incorrect username or password!");
+	}
 }
 
 int main() {
