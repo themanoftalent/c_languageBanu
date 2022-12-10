@@ -1,21 +1,26 @@
-// Printf as many name as you wish using for loop
-
 #include <stdio.h>
+#include <string.h>
 
 int main(){
-    
-    char name[5][10];
-    
-    printf("enter 5 names = \n ");
-    
-    for(int i=0;i<5; i++){
-    scanf("%s\n",name[i]);
+    int n;
+    char name[20];
 
+    printf("Enter the number of names: ");
+    scanf("%d",&n);
+
+    char arr[n][20];
+
+    printf("\nEnter %d names:\n",n);
+
+    for(int i = 0;i<n;i++){
+        scanf("%s",name);
+        strcpy(arr[i],name);
     }
-    
-    // to print
-    for(int i=0;i<5; i++){
-        printf("\n%s\n",name[i]);
+
+    printf("\n---Names---\n");
+
+    for(int i = 0;i<n;i++){
+        printf("%d- %s\n",i+1,arr[i]);
     }
     return 0;
 }
