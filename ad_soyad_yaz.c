@@ -6,16 +6,17 @@
 
 #include <stdio.h>
 
-int main() {
+ int main(){
+	char name[10] = "Güller";
+	char surname[10] = "Kalyoncu";
+	int age = 20;
 
 
-  //CODE BUARAYA YAZILACAK 
-//   String icin char kullan ve &kullanma, & sadece sayilar icin kullan. 
-
-
-
-
-
-
-
+	printf("Name : %s \n",name);	
+	printf("Surname : %s \n",surname);   
+	printf("Age : %d \n",age);
+	
+	return 0;
+	
+ 
 }
