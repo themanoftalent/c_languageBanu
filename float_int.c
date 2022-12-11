@@ -1,4 +1,0 @@
-
-
-// Akif was here 😇
-//Gosh!
