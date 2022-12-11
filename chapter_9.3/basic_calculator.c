@@ -1,39 +1,40 @@
-
 #include "stdio.h"
-#include "stdlib.h"
-#include "string.h"
-#include "ctype.h" // for isdigit()
 
-void calculator() { // calculator function
-    int a, b, c; // a, b, c variables
-    char d; // d variable
-  
+// Prototype:
+void calculator();
+
+
+int main() {
+    calculator();
+}
+
+void calculator() {
+    int number_1, number_2, result;
+    char op; // op that means operator
+
     printf("Enter the first number: ");
-    scanf("%d", &a); // first number
+    scanf("%d", &number_1);
     printf("Enter the second number: ");
-    scanf("%d", &b); // second number
+    scanf("%d", &number_2);
     printf("Enter the operator: ");
-    scanf(" %c", &d);
-  
-    if (d == '+') { // if operator is +
-        c = a + b; // add
-        printf("The result is: %d", c);
-    } else if (d == '-') { // if operator is -
-        c = a - b; // subtract
-        printf("The result is: %d", c);
-    } else if (d == '*') {
-        c = a * b;
-        printf("The result is: %d", c);
-    } else if (d == '/') {
-        c = a / b;
-        printf("The result is: %d", c);
+    scanf(" %c", &op);
+
+    if (op == '-') {
+        result = number_1 - number_2;
+        printf("The result is: %d", result);
+    } else if (op == '+') {
+        result = number_1 + number_2;
+        printf("The result is: %d", result);
+    } else if (op == '*') {
+        result = number_1 * number_2;
+        printf("The result is: %d", result);
+    } else if (op == '/') {
+        result = number_1 / number_2;
+        printf("The result is: %d", result);
     } else {
         printf("Invalid operator");
     }
 
 }
 
-int main() {
-    calculator();
-    return 0;
-}
+
