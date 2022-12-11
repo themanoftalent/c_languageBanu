@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main() {
@@ -7,15 +8,19 @@ int main() {
             {11, 12, 13,14, 15, 16, 17, 18, 19, 20},
     };
 
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 3; ++i) {
         printf("\n----------- Student %d details ----------- \n", i);
+
         int total = 0;
-        int totalSubjects = 0;
-        for (int j = 0; j < 3; ++j) {
-            printf("Subject %d marks: %d \t", j, numbers[j][i]);
+        int totalSubjects =0;
+
+        for (int j = 0; j <10 ; ++j)
+         {
+            printf("Subject %d marks: %d \n", j, numbers[i][j]);
+
             total += numbers[j][i]; // total = total + numbers[j][i];
             totalSubjects++;
-        }
+         }
 //     your code here
     }
     return 0;
