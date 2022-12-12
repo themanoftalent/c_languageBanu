@@ -4,6 +4,14 @@
 #include <stdio.h>
 int main()
 {
-//   YOUR CODE HERE
-  
+  int dizi[10];
+ int i;
+  for(i=0;i<10;i++)
+  {
+    scanf("%d",&dizi[i]);
+  }
+   for(i=0;i<10;i++)
+  {
+    printf("%d",dizi[i]);
+  }
 }
