@@ -5,5 +5,14 @@
 int main()
 {
 //   YOUR CODE HERE
-  
+  int array[10],i;
+
+  for(i=0;i<10;i++){
+  printf("number %d: ",i+1);
+  scanf("%d",&array[i]);
+  }
+  for(i=0;i<10;i++){
+  printf("%d \n",array[i]);
+  }
+
 }
