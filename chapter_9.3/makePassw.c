@@ -1,34 +1,32 @@
-// be sure that the password is entered in * form and not revealed 
 
 #include "stdio.h"
 #include "stdlib.h"
 #include "string.h"
+#include "ctype.h" // for isdigit()
 
-#define name "Akif"
-#define surname "Cifci"
-#define age 36
-#define password "crime"
+#define user "admin"
+#define passwd "1234"
+
+struct users {
+    char username[20];
+    char password[20];
+};
+
+void login() {
+    struct users kullanici;
+    printf("Enter your username: ");
+    scanf("%s", kullanici.username);
+    printf("Enter your password: ");
+    scanf("%s", kullanici.password);
+    if (strcmp(user, kullanici.username) == 0 && strcmp(passwd, kullanici.password) == 0) {
+        printf("Login successful");
+    } else {
+        printf("Login failed");
+    }
+
+}
 
 int main() {
-    printf("Enter name: ");
-    char names[20];
-    scanf("%s", names);
-    printf("Enter surname: ");
-    char surnames[20];
-    scanf("%s", surnames);
-
-    printf("Enter age: ");
-    int ages;
-    scanf("%d", &ages);
-
-    printf("Enter password: ");
-    char passwords[20];
-    scanf("%s", passwords);
-
-    if (strcmp(names, name) == 0 && strcmp(surnames, surname) == 0 && ages == age && strcmp(passwords, password) == 0) {
-        printf("Welcome to the system");
-    } else {
-        printf("Wrong name/surname/password/age");
-    }
+    login();
     return 0;
 }
