@@ -8,15 +8,16 @@ int main() {
     };
 
     for (int i = 0; i < 10; ++i) {
-        printf("\n----------- Student %d details ----------- \n", i);
+        printf("\n\n         ----------- Student %d details ----------- \n\n", i);
         int total = 0;
         int totalSubjects = 0;
         for (int j = 0; j < 3; ++j) {
-            printf("Subject %d marks: %d \t", j, numbers[j][i]);
+            printf("Subject %d marks: %d \t", j+1, numbers[j][i]);
             total += numbers[j][i]; // total = total + numbers[j][i];
             totalSubjects++;
         }
-//     your code here
+        printf("\nTotal marks of student %d: %d\n", i, total);
+        printf("Average marks of student %d: %.2f\n", i, (float)total / totalSubjects);
     }
     return 0;
 }
