@@ -1,9 +1,22 @@
-//AKIF
-//C program to input 10 numbers from user and display 10 numbers using array.
-
 #include <stdio.h>
-int main()
-{
-//   YOUR CODE HERE
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+
+  int arr[10];
+  int i;
   
+
+  for(i=0;i<10;i++){
+  	
+    printf("number %d: ",i+1);
+    scanf("%d",&arr[i]);
+  }
+  for(i=0;i<10;i++){
+    printf("%d \n",arr[i]);
+  }
+	
+	
+   return 0;	
 }
