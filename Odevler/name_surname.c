@@ -1,1 +1,10 @@
-// Display your name and surname on screen 
+#include "stdio.h"
+
+
+int main() { 
+  
+  printf("Halil Ibrahim Kaya");
+  
+  
+    return 0;
+}
