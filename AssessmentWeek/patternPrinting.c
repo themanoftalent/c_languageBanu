@@ -1,8 +1,3 @@
-// print the pattern
-
-// 55555555
-// 54444444
-
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
